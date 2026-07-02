@@ -7,3 +7,4 @@ daphne
 psycopg2
 psycopg2-binary
 openai
+google-generativeai
