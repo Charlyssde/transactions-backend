@@ -5,6 +5,7 @@ x-env-variables: &env-variables
   DB_PASSWORD: "secure_password"
   REDIS_URL: "redis://redis:6379/0"
   CELERY_BROKER_URL: "redis://redis:6379/0"
+  REDIS_HOST: "redis"
 
 services:
   db:
