@@ -9,6 +9,7 @@ y son orquestados por un único archivo `docker-compose.yml`.
 
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) (o Docker Engine con Docker Compose).
 * Git.
+* Python 3.12+ (Para el bot RPA).
 
 ---
 
@@ -49,3 +50,21 @@ Una vez que los contenedores estén corriendo, los servicios estarán disponible
 * 🌐 Frontend (React / Vite): http://localhost:5173
 * ⚙️ Backend API (Django): http://localhost:8000
 * 🔌 WebSockets (Channels): ws://localhost:8000/transactions/stream/
+
+
+## RPA
+Para ejecutar el RPA, deberás seguir los siguientes pasos:
+```bash
+# Cambiar de directorio
+cd rpa
+
+# Activar el venv dentro de la terminal
+python -m venv venv
+source venv/bin/activate
+
+# Instalar dependencias del proyecto
+pip install -r requirements.txt
+
+# Ejecutar el bot
+python bot.py
+```
